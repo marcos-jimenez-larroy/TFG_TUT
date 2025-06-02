@@ -1,0 +1,1571 @@
+
+Applying ATLAS style settings...
+
+
+Processing MakeFit_Bins_ws.cc("h_myy_pT_0")...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset hist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::myy
+[#0] WARNING:InputArguments -- The parameter 'width' with range [0, 10] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::dcbPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(dcbPdf_over_dcbPdf_Int[myy]) fixing normalization set for coefficient determination to observables in data
+[#1] INFO:Fitting -- using CPU computation library compiled with -mavx2
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(dcbPdf): WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303)."
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_dcbPdf_over_dcbPdf_Int[myy]_hist) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: activating const optimization
+Minuit2Minimizer: Minimize with max-calls 3000 convergence for edm < 1 strategy 1
+Info in <Minuit2>: MnSeedGenerator Computing seed using NumericalGradient calculator
+Info in <Minuit2>: MnSeedGenerator Initial state: FCN =       219.1129635 Edm =       17.00172591 NCalls =     25
+Info in <Minuit2>: MnSeedGenerator Initial state  
+  Minimum value : 219.1129635
+  Edm           : 17.00172591
+  Internal parameters:	[     -1.370461484     -1.370461484    -0.2762266308     -1.370461484     -1.370461484    -0.9972832224]	
+  Internal gradient  :	[     -165.6538746      -83.4156471     -216.7279859      -177.005339     -237.8726941      10.58646569]	
+  Internal covariance matrix:
+[[  0.00052627336              0              0              0              0              0]
+ [              0  0.00038510991              0              0              0              0]
+ [              0              0  7.4220605e-05              0              0              0]
+ [              0              0              0  0.00070152265              0              0]
+ [              0              0              0              0  0.00043291931              0]
+ [              0              0              0              0              0   0.0082452031]]]
+Info in <Minuit2>: VariableMetricBuilder Start iterating until Edm is < 0.001 with call limit = 3000
+Info in <Minuit2>: VariableMetricBuilder    0 - FCN =       219.1129635 Edm =       17.00172591 NCalls =     25
+Info in <Minuit2>: VariableMetricBuilder    1 - FCN =       204.9100285 Edm =       8.206548063 NCalls =     43
+Info in <Minuit2>: VariableMetricBuilder    2 - FCN =       193.9422768 Edm =       2.634786379 NCalls =     64
+Info in <Minuit2>: VariableMetricBuilder    3 - FCN =       186.9832449 Edm =       0.917378592 NCalls =     86
+Info in <Minuit2>: VariableMetricBuilder    4 - FCN =       186.0904869 Edm =      0.2074927659 NCalls =    101
+Info in <Minuit2>: VariableMetricBuilder    5 - FCN =       185.7272913 Edm =     0.01714877668 NCalls =    120
+Info in <Minuit2>: VariableMetricBuilder    6 - FCN =       185.6642956 Edm =    0.001222074381 NCalls =    135
+Info in <Minuit2>: VariableMetricBuilder    7 - FCN =       185.6623225 Edm =   0.0004910113609 NCalls =    149
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder    8 - FCN =       185.6623225 Edm =     0.03863073685 NCalls =    189
+Info in <Minuit2>: VariableMetricBuilder Tolerance not sufficient, continue minimization; Edm 0.0386307 Required 0.001
+Info in <Minuit2>: VariableMetricBuilder    9 - FCN =       185.6225735 Edm =     0.01006630603 NCalls =    210
+Info in <Minuit2>: VariableMetricBuilder   10 - FCN =       185.5685995 Edm =     0.01284051562 NCalls =    235
+Info in <Minuit2>: VariableMetricBuilder   11 - FCN =       185.5548879 Edm =      0.0286568279 NCalls =    251
+Info in <Minuit2>: VariableMetricBuilder   12 - FCN =       185.5262597 Edm =     0.02149410027 NCalls =    270
+Info in <Minuit2>: VariableMetricBuilder   13 - FCN =       185.5159081 Edm =     0.01790713421 NCalls =    285
+Info in <Minuit2>: VariableMetricBuilder   14 - FCN =       185.5006815 Edm =    0.001631233835 NCalls =    299
+Info in <Minuit2>: VariableMetricBuilder   15 - FCN =       185.4988934 Edm =   0.0005738487941 NCalls =    312
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   16 - FCN =       185.4988934 Edm =    0.005115086523 NCalls =    352
+Info in <Minuit2>: VariableMetricBuilder Tolerance not sufficient, continue minimization; Edm 0.00511509 Required 0.001
+Info in <Minuit2>: VariableMetricBuilder   17 - FCN =       185.4912033 Edm =   0.0009357768393 NCalls =    370
+Info in <Minuit2>: VariableMetricBuilder   18 - FCN =       185.4898867 Edm =   0.0002665556316 NCalls =    384
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   19 - FCN =       185.4898867 Edm =   0.0007412129822 NCalls =    424
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 185.489886735126532
+Edm   = 0.000741212982180850964
+Nfcn  = 424
+a1	  = 1.70101	 +/-  0.579801	(limited)
+a2	  = 1.71909	 +/-  0.637634	(limited)
+mu	  = 125.483	 +/-  0.223261	(limited)
+p1	  = 6.97828	 +/-  13.2092	(limited)
+p2	  = 26.8006	 +/-  83.2994	(limited)
+width	  = 1.88178	 +/-  0.192504	(limited)
+Info in <Minuit2>: Minuit2Minimizer::Hesse Using max-calls 3000
+Info in <Minuit2>: Minuit2Minimizer::Hesse Hesse is valid - matrix is accurate
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: 185.49, estimated distance to minimum: 0.000778709
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                    a1    1.7010e+00 +/-  5.89e-01
+                    a2    1.7191e+00 +/-  6.51e-01
+                    mu    1.2548e+02 +/-  2.23e-01
+                    p1    6.9783e+00 +/-  1.34e+01
+                    p2    2.6801e+01 +/-  8.43e+01
+                 width    1.8818e+00 +/-  1.93e-01
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(hist) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+Info in <TCanvas::Print>: pdf file /home/mjlarroy/TFG_TUT/figures/pdf_graphs/Signal_fit_h_myy_pT_0.pdf has been created
+
+Applying ATLAS style settings...
+
+
+Processing MakeFit_Bins_ws.cc("h_myy_pT_1")...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset hist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::myy
+[#0] WARNING:InputArguments -- The parameter 'width' with range [0, 10] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::dcbPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(dcbPdf_over_dcbPdf_Int[myy]) fixing normalization set for coefficient determination to observables in data
+[#1] INFO:Fitting -- using CPU computation library compiled with -mavx2
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(dcbPdf): WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303)."
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_dcbPdf_over_dcbPdf_Int[myy]_hist) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: activating const optimization
+Minuit2Minimizer: Minimize with max-calls 3000 convergence for edm < 1 strategy 1
+Info in <Minuit2>: MnSeedGenerator Computing seed using NumericalGradient calculator
+Info in <Minuit2>: MnSeedGenerator Initial state: FCN =       443.6158058 Edm =        33.5650992 NCalls =     25
+Info in <Minuit2>: MnSeedGenerator Initial state  
+  Minimum value : 443.6158058
+  Edm           : 33.5650992
+  Internal parameters:	[     -1.370461484     -1.370461484    -0.2762266308     -1.370461484     -1.370461484    -0.9972832224]	
+  Internal gradient  :	[     -330.0520369     -161.0684501     -445.0582998     -352.4760626     -476.5113254      19.90981032]	
+  Internal covariance matrix:
+[[  0.00025997989              0              0              0              0              0]
+ [              0  0.00019019737              0              0              0              0]
+ [              0              0  3.7350504e-05              0              0              0]
+ [              0              0              0  0.00034775171              0              0]
+ [              0              0              0              0  0.00021478797              0]
+ [              0              0              0              0              0   0.0041176084]]]
+Info in <Minuit2>: VariableMetricBuilder Start iterating until Edm is < 0.001 with call limit = 3000
+Info in <Minuit2>: VariableMetricBuilder    0 - FCN =       443.6158058 Edm =        33.5650992 NCalls =     25
+Info in <Minuit2>: VariableMetricBuilder    1 - FCN =       415.3233795 Edm =       16.72402908 NCalls =     43
+Info in <Minuit2>: VariableMetricBuilder    2 - FCN =       393.1865255 Edm =       5.257113237 NCalls =     62
+Info in <Minuit2>: VariableMetricBuilder    3 - FCN =       379.7031425 Edm =       1.773897427 NCalls =     84
+Info in <Minuit2>: VariableMetricBuilder    4 - FCN =       377.9542101 Edm =      0.4154338746 NCalls =     99
+Info in <Minuit2>: VariableMetricBuilder    5 - FCN =       377.2810179 Edm =      0.0306886312 NCalls =    119
+Info in <Minuit2>: VariableMetricBuilder    6 - FCN =       377.2045504 Edm =    0.005191264329 NCalls =    133
+Info in <Minuit2>: VariableMetricBuilder    7 - FCN =       377.1955622 Edm =   0.0007129817116 NCalls =    148
+Info in <Minuit2>: VariableMetricBuilder    8 - FCN =       377.1920554 Edm =    0.002921749901 NCalls =    162
+Info in <Minuit2>: VariableMetricBuilder    9 - FCN =       377.1642156 Edm =    0.006985054264 NCalls =    178
+Info in <Minuit2>: VariableMetricBuilder   10 - FCN =       377.1394626 Edm =     0.01364078132 NCalls =    194
+Info in <Minuit2>: VariableMetricBuilder   11 - FCN =        377.073005 Edm =       0.023148679 NCalls =    210
+Info in <Minuit2>: VariableMetricBuilder   12 - FCN =       377.0650244 Edm =     0.01263811538 NCalls =    224
+Info in <Minuit2>: VariableMetricBuilder   13 - FCN =       376.9995447 Edm =     0.02603473951 NCalls =    238
+Info in <Minuit2>: VariableMetricBuilder   14 - FCN =       376.9632184 Edm =     0.00216967639 NCalls =    253
+Info in <Minuit2>: VariableMetricBuilder   15 - FCN =       376.9574061 Edm =    0.000469153399 NCalls =    268
+Info in <Minuit2>: VariableMetricBuilder   16 - FCN =       376.9568237 Edm =   0.0001079738691 NCalls =    282
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   17 - FCN =       376.9568237 Edm =     0.07909933558 NCalls =    322
+Info in <Minuit2>: VariableMetricBuilder Tolerance not sufficient, continue minimization; Edm 0.0790993 Required 0.001
+Info in <Minuit2>: VariableMetricBuilder   18 - FCN =       376.8933514 Edm =     0.01829363923 NCalls =    339
+Info in <Minuit2>: VariableMetricBuilder   19 - FCN =       376.8756815 Edm =    0.009391464546 NCalls =    354
+Info in <Minuit2>: VariableMetricBuilder   20 - FCN =       376.8623935 Edm =    0.003859957419 NCalls =    371
+Info in <Minuit2>: VariableMetricBuilder   21 - FCN =       376.8570674 Edm =    0.001626812548 NCalls =    385
+Info in <Minuit2>: VariableMetricBuilder   22 - FCN =       376.8545595 Edm =   0.0004392305162 NCalls =    400
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   23 - FCN =       376.8545595 Edm =   0.0009092577925 NCalls =    440
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 376.854559483473395
+Edm   = 0.000909257792540374052
+Nfcn  = 440
+a1	  = 1.6982	 +/-  0.388434	(limited)
+a2	  = 1.69656	 +/-  0.432623	(limited)
+mu	  = 125.491	 +/-  0.157549	(limited)
+p1	  = 5.60586	 +/-  6.24326	(limited)
+p2	  = 20.2044	 +/-  52.7364	(limited)
+width	  = 1.88072	 +/-  0.136093	(limited)
+Info in <Minuit2>: Minuit2Minimizer::Hesse Using max-calls 3000
+Info in <Minuit2>: Minuit2Minimizer::Hesse Hesse is valid - matrix is accurate
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: 376.855, estimated distance to minimum: 0.000938171
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                    a1    1.6982e+00 +/-  3.93e-01
+                    a2    1.6966e+00 +/-  4.41e-01
+                    mu    1.2549e+02 +/-  1.58e-01
+                    p1    5.6059e+00 +/-  6.33e+00
+                    p2    2.0204e+01 +/-  5.20e+01
+                 width    1.8807e+00 +/-  1.36e-01
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(hist) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+Info in <TCanvas::Print>: pdf file /home/mjlarroy/TFG_TUT/figures/pdf_graphs/Signal_fit_h_myy_pT_1.pdf has been created
+
+Applying ATLAS style settings...
+
+
+Processing MakeFit_Bins_ws.cc("h_myy_pT_2")...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset hist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::myy
+[#0] WARNING:InputArguments -- The parameter 'width' with range [0, 10] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::dcbPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(dcbPdf_over_dcbPdf_Int[myy]) fixing normalization set for coefficient determination to observables in data
+[#1] INFO:Fitting -- using CPU computation library compiled with -mavx2
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(dcbPdf): WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303)."
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_dcbPdf_over_dcbPdf_Int[myy]_hist) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: activating const optimization
+Minuit2Minimizer: Minimize with max-calls 3000 convergence for edm < 1 strategy 1
+Info in <Minuit2>: MnSeedGenerator Computing seed using NumericalGradient calculator
+Info in <Minuit2>: MnSeedGenerator Initial state: FCN =       446.6088743 Edm =       33.38657821 NCalls =     25
+Info in <Minuit2>: MnSeedGenerator Initial state  
+  Minimum value : 446.6088743
+  Edm           : 33.38657821
+  Internal parameters:	[     -1.370461484     -1.370461484    -0.2762266308     -1.370461484     -1.370461484    -0.9972832224]	
+  Internal gradient  :	[        -329.4366     -164.5534007     -439.7709321     -352.0970006     -477.8907676      20.48844818]	
+  Internal covariance matrix:
+[[  0.00025805803              0              0              0              0              0]
+ [              0  0.00018923587              0              0              0              0]
+ [              0              0  3.6873113e-05              0              0              0]
+ [              0              0              0  0.00034561596              0              0]
+ [              0              0              0              0  0.00021334403              0]
+ [              0              0              0              0              0   0.0040834663]]]
+Info in <Minuit2>: VariableMetricBuilder Start iterating until Edm is < 0.001 with call limit = 3000
+Info in <Minuit2>: VariableMetricBuilder    0 - FCN =       446.6088743 Edm =       33.38657821 NCalls =     25
+Info in <Minuit2>: VariableMetricBuilder    1 - FCN =       418.5606271 Edm =       16.24730016 NCalls =     43
+Info in <Minuit2>: VariableMetricBuilder    2 - FCN =        396.804925 Edm =       5.164081216 NCalls =     62
+Info in <Minuit2>: VariableMetricBuilder    3 - FCN =       383.4274194 Edm =       1.688850031 NCalls =     84
+Info in <Minuit2>: VariableMetricBuilder    4 - FCN =       381.8569056 Edm =      0.4024248884 NCalls =     98
+Info in <Minuit2>: VariableMetricBuilder    5 - FCN =       381.3280811 Edm =      0.0251337307 NCalls =    116
+Info in <Minuit2>: VariableMetricBuilder    6 - FCN =       381.2634937 Edm =     0.01051877792 NCalls =    133
+Info in <Minuit2>: VariableMetricBuilder    7 - FCN =       381.2505981 Edm =    0.001334646962 NCalls =    147
+Info in <Minuit2>: VariableMetricBuilder    8 - FCN =        381.247892 Edm =    0.001494469706 NCalls =    161
+Info in <Minuit2>: VariableMetricBuilder    9 - FCN =       381.2248111 Edm =    0.003743331169 NCalls =    178
+Info in <Minuit2>: VariableMetricBuilder   10 - FCN =       381.1994358 Edm =     0.01399613103 NCalls =    194
+Info in <Minuit2>: VariableMetricBuilder   11 - FCN =       381.1520839 Edm =     0.02930756006 NCalls =    209
+Info in <Minuit2>: VariableMetricBuilder   12 - FCN =       381.1263534 Edm =    0.005081332407 NCalls =    225
+Info in <Minuit2>: VariableMetricBuilder   13 - FCN =       381.0937598 Edm =     0.01579694544 NCalls =    244
+Info in <Minuit2>: VariableMetricBuilder   14 - FCN =       381.0873067 Edm =     0.00958664755 NCalls =    258
+Info in <Minuit2>: VariableMetricBuilder   15 - FCN =       381.0757826 Edm =   0.0008423373481 NCalls =    272
+Info in <Minuit2>: VariableMetricBuilder   16 - FCN =       381.0742774 Edm =   0.0006021075335 NCalls =    286
+Info in <Minuit2>: VariableMetricBuilder   17 - FCN =       381.0730786 Edm =    0.000262111952 NCalls =    300
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   18 - FCN =       381.0730786 Edm =     0.08768456587 NCalls =    340
+Info in <Minuit2>: VariableMetricBuilder Tolerance not sufficient, continue minimization; Edm 0.0876846 Required 0.001
+Info in <Minuit2>: VariableMetricBuilder   19 - FCN =       380.9912102 Edm =     0.01730845566 NCalls =    359
+Info in <Minuit2>: VariableMetricBuilder   20 - FCN =       380.9686323 Edm =    0.007982268179 NCalls =    374
+Info in <Minuit2>: VariableMetricBuilder   21 - FCN =       380.9572664 Edm =    0.003534617285 NCalls =    388
+Info in <Minuit2>: VariableMetricBuilder   22 - FCN =       380.9530876 Edm =   0.0009501638104 NCalls =    402
+Info in <Minuit2>: VariableMetricBuilder   23 - FCN =       380.9516628 Edm =   0.0001589282048 NCalls =    417
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   24 - FCN =       380.9516628 Edm =   0.0002403771736 NCalls =    457
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 380.951662830066368
+Edm   = 0.000240377173563428528
+Nfcn  = 457
+a1	  = 1.7223	 +/-  0.386355	(limited)
+a2	  = 1.68655	 +/-  0.421626	(limited)
+mu	  = 125.487	 +/-  0.157285	(limited)
+p1	  = 4.68755	 +/-  4.57893	(limited)
+p2	  = 14.7198	 +/-  56.3899	(limited)
+width	  = 1.87795	 +/-  0.136452	(limited)
+Info in <Minuit2>: Minuit2Minimizer::Hesse Using max-calls 3000
+Info in <Minuit2>: Minuit2Minimizer::Hesse Hesse is valid - matrix is accurate
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: 380.952, estimated distance to minimum: 0.000248036
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                    a1    1.7223e+00 +/-  3.91e-01
+                    a2    1.6866e+00 +/-  4.29e-01
+                    mu    1.2549e+02 +/-  1.57e-01
+                    p1    4.6876e+00 +/-  4.64e+00
+                    p2    1.4720e+01 +/-  5.62e+01
+                 width    1.8780e+00 +/-  1.36e-01
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(hist) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+Info in <TCanvas::Print>: pdf file /home/mjlarroy/TFG_TUT/figures/pdf_graphs/Signal_fit_h_myy_pT_2.pdf has been created
+
+Applying ATLAS style settings...
+
+
+Processing MakeFit_Bins_ws.cc("h_myy_pT_3")...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset hist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::myy
+[#0] WARNING:InputArguments -- The parameter 'width' with range [0, 10] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::dcbPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(dcbPdf_over_dcbPdf_Int[myy]) fixing normalization set for coefficient determination to observables in data
+[#1] INFO:Fitting -- using CPU computation library compiled with -mavx2
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(dcbPdf): WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303)."
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_dcbPdf_over_dcbPdf_Int[myy]_hist) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: activating const optimization
+Minuit2Minimizer: Minimize with max-calls 3000 convergence for edm < 1 strategy 1
+Info in <Minuit2>: MnSeedGenerator Computing seed using NumericalGradient calculator
+Info in <Minuit2>: MnSeedGenerator Initial state: FCN =       389.3206259 Edm =       29.49707544 NCalls =     25
+Info in <Minuit2>: MnSeedGenerator Initial state  
+  Minimum value : 389.3206259
+  Edm           : 29.49707544
+  Internal parameters:	[     -1.370461484     -1.370461484    -0.2762266308     -1.370461484     -1.370461484    -0.9972832224]	
+  Internal gradient  :	[     -291.2448872     -142.4404119     -387.7778686     -309.3681792     -417.7571511      17.95614267]	
+  Internal covariance matrix:
+[[  0.00029680846              0              0              0              0              0]
+ [              0  0.00021672958              0              0              0              0]
+ [              0              0  4.2281544e-05              0              0              0]
+ [              0              0              0  0.00039563657              0              0]
+ [              0              0              0              0  0.00024457132              0]
+ [              0              0              0              0              0    0.004677152]]]
+Info in <Minuit2>: VariableMetricBuilder Start iterating until Edm is < 0.001 with call limit = 3000
+Info in <Minuit2>: VariableMetricBuilder    0 - FCN =       389.3206259 Edm =       29.49707544 NCalls =     25
+Info in <Minuit2>: VariableMetricBuilder    1 - FCN =        364.580635 Edm =       14.36503702 NCalls =     43
+Info in <Minuit2>: VariableMetricBuilder    2 - FCN =       345.3630999 Edm =       4.581336139 NCalls =     62
+Info in <Minuit2>: VariableMetricBuilder    3 - FCN =       333.5408298 Edm =       1.454840357 NCalls =     84
+Info in <Minuit2>: VariableMetricBuilder    4 - FCN =        332.182652 Edm =      0.3618022309 NCalls =     98
+Info in <Minuit2>: VariableMetricBuilder    5 - FCN =       331.7046529 Edm =     0.02349828461 NCalls =    116
+Info in <Minuit2>: VariableMetricBuilder    6 - FCN =       331.6473921 Edm =    0.007197720971 NCalls =    132
+Info in <Minuit2>: VariableMetricBuilder    7 - FCN =       331.6380399 Edm =   0.0007388669138 NCalls =    146
+Info in <Minuit2>: VariableMetricBuilder    8 - FCN =       331.6353572 Edm =    0.002548433016 NCalls =    160
+Info in <Minuit2>: VariableMetricBuilder    9 - FCN =       331.6155273 Edm =    0.004564004604 NCalls =    177
+Info in <Minuit2>: VariableMetricBuilder   10 - FCN =        331.605148 Edm =     0.00863571619 NCalls =    192
+Info in <Minuit2>: VariableMetricBuilder   11 - FCN =       331.5762971 Edm =     0.01726538377 NCalls =    208
+Info in <Minuit2>: VariableMetricBuilder   12 - FCN =       331.5366449 Edm =    0.002175833255 NCalls =    223
+Info in <Minuit2>: VariableMetricBuilder   13 - FCN =       331.5336441 Edm =     0.00170075019 NCalls =    239
+Info in <Minuit2>: VariableMetricBuilder   14 - FCN =       331.5024583 Edm =    0.003365042661 NCalls =    259
+Info in <Minuit2>: VariableMetricBuilder   15 - FCN =       331.5013194 Edm =    0.004532899947 NCalls =    273
+Info in <Minuit2>: VariableMetricBuilder   16 - FCN =       331.4983539 Edm =   0.0008757071599 NCalls =    287
+Info in <Minuit2>: VariableMetricBuilder   17 - FCN =       331.4964732 Edm =   0.0001754904003 NCalls =    302
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   18 - FCN =       331.4964732 Edm =     0.08051732064 NCalls =    342
+Info in <Minuit2>: VariableMetricBuilder Tolerance not sufficient, continue minimization; Edm 0.0805173 Required 0.001
+Info in <Minuit2>: VariableMetricBuilder   19 - FCN =       331.4238944 Edm =     0.01437536629 NCalls =    359
+Info in <Minuit2>: VariableMetricBuilder   20 - FCN =       331.4014777 Edm =    0.007390499206 NCalls =    377
+Info in <Minuit2>: VariableMetricBuilder   21 - FCN =       331.3919766 Edm =    0.003423247232 NCalls =    391
+Info in <Minuit2>: VariableMetricBuilder   22 - FCN =       331.3886832 Edm =    0.001046008361 NCalls =    405
+Info in <Minuit2>: VariableMetricBuilder   23 - FCN =       331.3870817 Edm =   0.0002487552819 NCalls =    420
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   24 - FCN =       331.3870817 Edm =    0.000374335306 NCalls =    460
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 331.387081697138285
+Edm   = 0.000374335306026626023
+Nfcn  = 460
+a1	  = 1.73623	 +/-  0.418687	(limited)
+a2	  = 1.6991	 +/-  0.460756	(limited)
+mu	  = 125.493	 +/-  0.16755	(limited)
+p1	  = 4.61773	 +/-  4.80361	(limited)
+p2	  = 15.2812	 +/-  55.4651	(limited)
+width	  = 1.87149	 +/-  0.145099	(limited)
+Info in <Minuit2>: Minuit2Minimizer::Hesse Using max-calls 3000
+Info in <Minuit2>: Minuit2Minimizer::Hesse Hesse is valid - matrix is accurate
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: 331.387, estimated distance to minimum: 0.000389221
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                    a1    1.7362e+00 +/-  4.24e-01
+                    a2    1.6991e+00 +/-  4.69e-01
+                    mu    1.2549e+02 +/-  1.68e-01
+                    p1    4.6177e+00 +/-  4.87e+00
+                    p2    1.5281e+01 +/-  5.52e+01
+                 width    1.8715e+00 +/-  1.45e-01
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(hist) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+Info in <TCanvas::Print>: pdf file /home/mjlarroy/TFG_TUT/figures/pdf_graphs/Signal_fit_h_myy_pT_3.pdf has been created
+
+Applying ATLAS style settings...
+
+
+Processing MakeFit_Bins_ws.cc("h_myy_pT_4")...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset hist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::myy
+[#0] WARNING:InputArguments -- The parameter 'width' with range [0, 10] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::dcbPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(dcbPdf_over_dcbPdf_Int[myy]) fixing normalization set for coefficient determination to observables in data
+[#1] INFO:Fitting -- using CPU computation library compiled with -mavx2
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(dcbPdf): WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303)."
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_dcbPdf_over_dcbPdf_Int[myy]_hist) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: activating const optimization
+Minuit2Minimizer: Minimize with max-calls 3000 convergence for edm < 1 strategy 1
+Info in <Minuit2>: MnSeedGenerator Computing seed using NumericalGradient calculator
+Info in <Minuit2>: MnSeedGenerator Initial state: FCN =       326.9066127 Edm =       25.18838338 NCalls =     25
+Info in <Minuit2>: MnSeedGenerator Initial state  
+  Minimum value : 326.9066127
+  Edm           : 25.18838338
+  Internal parameters:	[     -1.370461484     -1.370461484    -0.2762266308     -1.370461484     -1.370461484    -0.9972832224]	
+  Internal gradient  :	[     -249.3940284     -117.6067318     -343.3098638     -261.6536179     -350.2335793      15.52995838]	
+  Internal covariance matrix:
+[[   0.0003548558              0              0              0              0              0]
+ [              0  0.00025749272              0              0              0              0]
+ [              0              0  4.9974456e-05              0              0              0]
+ [              0              0              0  0.00047003783              0              0]
+ [              0              0              0              0   0.0002911435              0]
+ [              0              0              0              0              0    0.005548447]]]
+Info in <Minuit2>: VariableMetricBuilder Start iterating until Edm is < 0.001 with call limit = 3000
+Info in <Minuit2>: VariableMetricBuilder    0 - FCN =       326.9066127 Edm =       25.18838338 NCalls =     25
+Info in <Minuit2>: VariableMetricBuilder    1 - FCN =       305.8844345 Edm =       11.96261966 NCalls =     43
+Info in <Minuit2>: VariableMetricBuilder    2 - FCN =       289.7767479 Edm =       3.873354318 NCalls =     62
+Info in <Minuit2>: VariableMetricBuilder    3 - FCN =       279.8368201 Edm =       1.182008829 NCalls =     84
+Info in <Minuit2>: VariableMetricBuilder    4 - FCN =       278.7702575 Edm =      0.2732506313 NCalls =     98
+Info in <Minuit2>: VariableMetricBuilder    5 - FCN =       278.4019883 Edm =     0.01479310908 NCalls =    116
+Info in <Minuit2>: VariableMetricBuilder    6 - FCN =       278.3625776 Edm =    0.006459650061 NCalls =    133
+Info in <Minuit2>: VariableMetricBuilder    7 - FCN =       278.3551485 Edm =    0.001087857622 NCalls =    147
+Info in <Minuit2>: VariableMetricBuilder    8 - FCN =       278.3520783 Edm =    0.002092063972 NCalls =    161
+Info in <Minuit2>: VariableMetricBuilder    9 - FCN =       278.3318719 Edm =    0.003478659617 NCalls =    177
+Info in <Minuit2>: VariableMetricBuilder   10 - FCN =       278.3088096 Edm =     0.01475806715 NCalls =    192
+Info in <Minuit2>: VariableMetricBuilder   11 - FCN =       278.2667117 Edm =     0.01034446848 NCalls =    207
+Info in <Minuit2>: VariableMetricBuilder   12 - FCN =        278.254387 Edm =    0.004878656092 NCalls =    225
+Info in <Minuit2>: VariableMetricBuilder   13 - FCN =       278.2286627 Edm =    0.003977493974 NCalls =    242
+Info in <Minuit2>: VariableMetricBuilder   14 - FCN =       278.2264889 Edm =      0.0020185894 NCalls =    256
+Info in <Minuit2>: VariableMetricBuilder   15 - FCN =       278.2238366 Edm =   0.0002489724048 NCalls =    270
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   16 - FCN =       278.2238366 Edm =     0.07079670023 NCalls =    310
+Info in <Minuit2>: VariableMetricBuilder Tolerance not sufficient, continue minimization; Edm 0.0707967 Required 0.001
+Info in <Minuit2>: VariableMetricBuilder   17 - FCN =       278.1662179 Edm =     0.01359158481 NCalls =    327
+Info in <Minuit2>: VariableMetricBuilder   18 - FCN =       278.1517371 Edm =    0.006247422507 NCalls =    342
+Info in <Minuit2>: VariableMetricBuilder   19 - FCN =       278.1443619 Edm =     0.00261394003 NCalls =    356
+Info in <Minuit2>: VariableMetricBuilder   20 - FCN =       278.1413583 Edm =   0.0005598874022 NCalls =    369
+Info in <Minuit2>: VariableMetricBuilder   21 - FCN =       278.1404777 Edm =   8.858174142e-05 NCalls =    384
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   22 - FCN =       278.1404777 Edm =   0.0001219137019 NCalls =    426
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 278.140477725956032
+Edm   = 0.000121913701933226086
+Nfcn  = 426
+a1	  = 1.72371	 +/-  0.443072	(limited)
+a2	  = 1.70817	 +/-  0.504366	(limited)
+mu	  = 125.505	 +/-  0.181539	(limited)
+p1	  = 4.76615	 +/-  5.44925	(limited)
+p2	  = 13.1954	 +/-  55.1711	(limited)
+width	  = 1.86318	 +/-  0.156702	(limited)
+Info in <Minuit2>: Minuit2Minimizer::Hesse Using max-calls 3000
+Info in <Minuit2>: Minuit2Minimizer::Hesse Hesse is valid - matrix is accurate
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: 278.14, estimated distance to minimum: 0.00012552
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                    a1    1.7237e+00 +/-  4.49e-01
+                    a2    1.7082e+00 +/-  5.14e-01
+                    mu    1.2550e+02 +/-  1.82e-01
+                    p1    4.7662e+00 +/-  5.52e+00
+                    p2    1.3195e+01 +/-  5.50e+01
+                 width    1.8632e+00 +/-  1.57e-01
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(hist) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+Info in <TCanvas::Print>: pdf file /home/mjlarroy/TFG_TUT/figures/pdf_graphs/Signal_fit_h_myy_pT_4.pdf has been created
+
+Applying ATLAS style settings...
+
+
+Processing MakeFit_Bins_ws.cc("h_myy_pT_5")...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset hist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::myy
+[#0] WARNING:InputArguments -- The parameter 'width' with range [0, 10] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::dcbPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(dcbPdf_over_dcbPdf_Int[myy]) fixing normalization set for coefficient determination to observables in data
+[#1] INFO:Fitting -- using CPU computation library compiled with -mavx2
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(dcbPdf): WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303)."
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_dcbPdf_over_dcbPdf_Int[myy]_hist) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: activating const optimization
+Minuit2Minimizer: Minimize with max-calls 3000 convergence for edm < 1 strategy 1
+Info in <Minuit2>: MnSeedGenerator Computing seed using NumericalGradient calculator
+Info in <Minuit2>: MnSeedGenerator Initial state: FCN =       271.5599894 Edm =       21.18218413 NCalls =     25
+Info in <Minuit2>: MnSeedGenerator Initial state  
+  Minimum value : 271.5599894
+  Edm           : 21.18218413
+  Internal parameters:	[     -1.370461484     -1.370461484    -0.2762266308     -1.370461484     -1.370461484    -0.9972832224]	
+  Internal gradient  :	[     -211.5778283     -96.72564631      -279.962754     -219.1417106     -291.2549266      13.33313014]	
+  Internal covariance matrix:
+[[   0.0004286749              0              0              0              0              0]
+ [              0  0.00030933922              0              0              0              0]
+ [              0              0  5.9650283e-05              0              0              0]
+ [              0              0              0  0.00056405174              0              0]
+ [              0              0              0              0  0.00035011817              0]
+ [              0              0              0              0              0    0.006647413]]]
+Info in <Minuit2>: VariableMetricBuilder Start iterating until Edm is < 0.001 with call limit = 3000
+Info in <Minuit2>: VariableMetricBuilder    0 - FCN =       271.5599894 Edm =       21.18218413 NCalls =     25
+Info in <Minuit2>: VariableMetricBuilder    1 - FCN =         253.99807 Edm =       9.865098095 NCalls =     43
+Info in <Minuit2>: VariableMetricBuilder    2 - FCN =       240.5659975 Edm =       3.269978786 NCalls =     64
+Info in <Minuit2>: VariableMetricBuilder    3 - FCN =        231.991861 Edm =      0.7699720519 NCalls =     86
+Info in <Minuit2>: VariableMetricBuilder    4 - FCN =         231.31311 Edm =      0.1692874932 NCalls =    102
+Info in <Minuit2>: VariableMetricBuilder    5 - FCN =       231.0731095 Edm =    0.008885686609 NCalls =    118
+Info in <Minuit2>: VariableMetricBuilder    6 - FCN =       231.0499493 Edm =    0.001448586776 NCalls =    132
+Info in <Minuit2>: VariableMetricBuilder    7 - FCN =        231.047968 Edm =   0.0003034815888 NCalls =    146
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder    8 - FCN =        231.047968 Edm =     0.06714618732 NCalls =    186
+Info in <Minuit2>: VariableMetricBuilder Tolerance not sufficient, continue minimization; Edm 0.0671462 Required 0.001
+Info in <Minuit2>: VariableMetricBuilder    9 - FCN =       231.0186505 Edm =     0.01023553787 NCalls =    200
+Info in <Minuit2>: VariableMetricBuilder   10 - FCN =       230.9930718 Edm =     0.02167761796 NCalls =    222
+Info in <Minuit2>: VariableMetricBuilder   11 - FCN =       230.9597736 Edm =     0.01717487812 NCalls =    240
+Info in <Minuit2>: VariableMetricBuilder   12 - FCN =        230.941256 Edm =     0.02018279898 NCalls =    255
+Info in <Minuit2>: VariableMetricBuilder   13 - FCN =       230.9279467 Edm =    0.006721187428 NCalls =    269
+Info in <Minuit2>: VariableMetricBuilder   14 - FCN =        230.919211 Edm =    0.001113259812 NCalls =    284
+Info in <Minuit2>: VariableMetricBuilder   15 - FCN =       230.9181595 Edm =   0.0002339196689 NCalls =    297
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   16 - FCN =       230.9181595 Edm =   0.0009659902957 NCalls =    337
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 230.918159481505512
+Edm   = 0.000965990295749605916
+Nfcn  = 337
+a1	  = 1.7753	 +/-  0.515175	(limited)
+a2	  = 1.73483	 +/-  0.542371	(limited)
+mu	  = 125.507	 +/-  0.198396	(limited)
+p1	  = 4.19557	 +/-  4.99368	(limited)
+p2	  = 10.0015	 +/-  20.1192	(limited)
+width	  = 1.85328	 +/-  0.171597	(limited)
+Info in <Minuit2>: Minuit2Minimizer::Hesse Using max-calls 3000
+Info in <Minuit2>: Minuit2Minimizer::Hesse Hesse is valid - matrix is accurate
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: 230.918, estimated distance to minimum: 0.000977507
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                    a1    1.7753e+00 +/-  5.22e-01
+                    a2    1.7348e+00 +/-  5.50e-01
+                    mu    1.2551e+02 +/-  1.98e-01
+                    p1    4.1956e+00 +/-  5.06e+00
+                    p2    1.0002e+01 +/-  2.04e+01
+                 width    1.8533e+00 +/-  1.72e-01
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(hist) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+Info in <TCanvas::Print>: pdf file /home/mjlarroy/TFG_TUT/figures/pdf_graphs/Signal_fit_h_myy_pT_5.pdf has been created
+
+Applying ATLAS style settings...
+
+
+Processing MakeFit_Bins_ws.cc("h_myy_pT_6")...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset hist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::myy
+[#0] WARNING:InputArguments -- The parameter 'width' with range [0, 10] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::dcbPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(dcbPdf_over_dcbPdf_Int[myy]) fixing normalization set for coefficient determination to observables in data
+[#1] INFO:Fitting -- using CPU computation library compiled with -mavx2
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(dcbPdf): WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303)."
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_dcbPdf_over_dcbPdf_Int[myy]_hist) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: activating const optimization
+Minuit2Minimizer: Minimize with max-calls 3000 convergence for edm < 1 strategy 1
+Info in <Minuit2>: MnSeedGenerator Computing seed using NumericalGradient calculator
+Info in <Minuit2>: MnSeedGenerator Initial state: FCN =       325.0932709 Edm =       25.77258334 NCalls =     25
+Info in <Minuit2>: MnSeedGenerator Initial state  
+  Minimum value : 325.0932709
+  Edm           : 25.77258334
+  Internal parameters:	[     -1.370461484     -1.370461484    -0.2762266308     -1.370461484     -1.370461484    -0.9972832224]	
+  Internal gradient  :	[     -257.4819484     -114.7155436     -350.2768123     -264.2961642     -348.4323052      16.42708577]	
+  Internal covariance matrix:
+[[  0.00035927736              0              0              0              0              0]
+ [              0  0.00025788157              0              0              0              0]
+ [              0              0  4.9445997e-05              0              0              0]
+ [              0              0              0  0.00047008256              0              0]
+ [              0              0              0              0  0.00029226354              0]
+ [              0              0              0              0              0   0.0055300767]]]
+Info in <Minuit2>: VariableMetricBuilder Start iterating until Edm is < 0.001 with call limit = 3000
+Info in <Minuit2>: VariableMetricBuilder    0 - FCN =       325.0932709 Edm =       25.77258334 NCalls =     25
+Info in <Minuit2>: VariableMetricBuilder    1 - FCN =       303.8242214 Edm =        11.7126651 NCalls =     43
+Info in <Minuit2>: VariableMetricBuilder    2 - FCN =       287.7666688 Edm =       3.935111892 NCalls =     64
+Info in <Minuit2>: VariableMetricBuilder    3 - FCN =       277.4655723 Edm =      0.8792136322 NCalls =     86
+Info in <Minuit2>: VariableMetricBuilder    4 - FCN =       276.7116099 Edm =      0.1772152131 NCalls =    100
+Info in <Minuit2>: VariableMetricBuilder    5 - FCN =       276.4467894 Edm =    0.009487783264 NCalls =    116
+Info in <Minuit2>: VariableMetricBuilder    6 - FCN =       276.4213361 Edm =    0.001092590737 NCalls =    130
+Info in <Minuit2>: VariableMetricBuilder    7 - FCN =       276.4197732 Edm =   0.0004794608537 NCalls =    144
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder    8 - FCN =       276.4197732 Edm =     0.08313880301 NCalls =    184
+Info in <Minuit2>: VariableMetricBuilder Tolerance not sufficient, continue minimization; Edm 0.0831388 Required 0.001
+Info in <Minuit2>: VariableMetricBuilder    9 - FCN =       276.3803561 Edm =     0.01318567203 NCalls =    198
+Info in <Minuit2>: VariableMetricBuilder   10 - FCN =       276.3366513 Edm =     0.03974243538 NCalls =    217
+Info in <Minuit2>: VariableMetricBuilder   11 - FCN =       276.3043758 Edm =     0.02826104874 NCalls =    236
+Info in <Minuit2>: VariableMetricBuilder   12 - FCN =       276.2708567 Edm =     0.01886790125 NCalls =    251
+Info in <Minuit2>: VariableMetricBuilder   13 - FCN =       276.2524906 Edm =    0.009403211588 NCalls =    264
+Info in <Minuit2>: VariableMetricBuilder   14 - FCN =       276.2412441 Edm =    0.001920945539 NCalls =    279
+Info in <Minuit2>: VariableMetricBuilder   15 - FCN =       276.2394485 Edm =   0.0003245453093 NCalls =    292
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   16 - FCN =       276.2394485 Edm =     0.00152307779 NCalls =    332
+Info in <Minuit2>: VariableMetricBuilder Tolerance not sufficient, continue minimization; Edm 0.00152308 Required 0.001
+Info in <Minuit2>: VariableMetricBuilder   17 - FCN =       276.2375506 Edm =   9.944908295e-06 NCalls =    347
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   18 - FCN =       276.2375506 Edm =   1.306203646e-05 NCalls =    387
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 276.237550647362582
+Edm   = 1.30620364577940773e-05
+Nfcn  = 387
+a1	  = 1.78027	 +/-  0.467737	(limited)
+a2	  = 1.70524	 +/-  0.500493	(limited)
+mu	  = 125.517	 +/-  0.180486	(limited)
+p1	  = 4.18333	 +/-  4.50366	(limited)
+p2	  = 12.5717	 +/-  55.2581	(limited)
+width	  = 1.84905	 +/-  0.155878	(limited)
+Info in <Minuit2>: Minuit2Minimizer::Hesse Using max-calls 3000
+Info in <Minuit2>: Minuit2Minimizer::Hesse Hesse is valid - matrix is accurate
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: 276.238, estimated distance to minimum: 1.33184e-05
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                    a1    1.7803e+00 +/-  4.74e-01
+                    a2    1.7052e+00 +/-  5.08e-01
+                    mu    1.2552e+02 +/-  1.80e-01
+                    p1    4.1833e+00 +/-  4.56e+00
+                    p2    1.2572e+01 +/-  5.51e+01
+                 width    1.8490e+00 +/-  1.56e-01
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(hist) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+Info in <TCanvas::Print>: pdf file /home/mjlarroy/TFG_TUT/figures/pdf_graphs/Signal_fit_h_myy_pT_6.pdf has been created
+
+Applying ATLAS style settings...
+
+
+Processing MakeFit_Bins_ws.cc("h_myy_pT_7")...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset hist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::myy
+[#0] WARNING:InputArguments -- The parameter 'width' with range [0, 10] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::dcbPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(dcbPdf_over_dcbPdf_Int[myy]) fixing normalization set for coefficient determination to observables in data
+[#1] INFO:Fitting -- using CPU computation library compiled with -mavx2
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(dcbPdf): WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303)."
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_dcbPdf_over_dcbPdf_Int[myy]_hist) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: activating const optimization
+Minuit2Minimizer: Minimize with max-calls 3000 convergence for edm < 1 strategy 1
+Info in <Minuit2>: MnSeedGenerator Computing seed using NumericalGradient calculator
+Info in <Minuit2>: MnSeedGenerator Initial state: FCN =       248.3084746 Edm =       20.19716241 NCalls =     25
+Info in <Minuit2>: MnSeedGenerator Initial state  
+  Minimum value : 248.3084746
+  Edm           : 20.19716241
+  Internal parameters:	[     -1.370461484     -1.370461484    -0.2762266308     -1.370461484     -1.370461484    -0.9972832224]	
+  Internal gradient  :	[     -201.6451389     -88.49661177     -267.8791035     -204.9827685     -267.8083015      12.98614635]	
+  Internal covariance matrix:
+[[  0.00047261091              0              0              0              0              0]
+ [              0  0.00033719887              0              0              0              0]
+ [              0              0  6.4270315e-05              0              0              0]
+ [              0              0              0  0.00061262545              0              0]
+ [              0              0              0              0  0.00038154101              0]
+ [              0              0              0              0              0   0.0071943216]]]
+Info in <Minuit2>: VariableMetricBuilder Start iterating until Edm is < 0.001 with call limit = 3000
+Info in <Minuit2>: VariableMetricBuilder    0 - FCN =       248.3084746 Edm =       20.19716241 NCalls =     25
+Info in <Minuit2>: VariableMetricBuilder    1 - FCN =       231.7521861 Edm =       9.043463514 NCalls =     43
+Info in <Minuit2>: VariableMetricBuilder    2 - FCN =       219.2956261 Edm =       3.064782503 NCalls =     64
+Info in <Minuit2>: VariableMetricBuilder    3 - FCN =       211.3010307 Edm =      0.5931209922 NCalls =     86
+Info in <Minuit2>: VariableMetricBuilder    4 - FCN =       210.8257535 Edm =      0.1132350787 NCalls =    102
+Info in <Minuit2>: VariableMetricBuilder    5 - FCN =       210.6504919 Edm =    0.005059411766 NCalls =    119
+Info in <Minuit2>: VariableMetricBuilder    6 - FCN =       210.6351563 Edm =    0.002173306674 NCalls =    136
+Info in <Minuit2>: VariableMetricBuilder    7 - FCN =       210.6329899 Edm =   0.0003116258659 NCalls =    149
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder    8 - FCN =       210.6329899 Edm =     0.04747862306 NCalls =    189
+Info in <Minuit2>: VariableMetricBuilder Tolerance not sufficient, continue minimization; Edm 0.0474786 Required 0.001
+Info in <Minuit2>: VariableMetricBuilder    9 - FCN =       210.6006425 Edm =    0.007391035421 NCalls =    203
+Info in <Minuit2>: VariableMetricBuilder   10 - FCN =       210.5899536 Edm =    0.006260240726 NCalls =    219
+Info in <Minuit2>: VariableMetricBuilder   11 - FCN =       210.5519165 Edm =     0.01185174584 NCalls =    238
+Info in <Minuit2>: VariableMetricBuilder   12 - FCN =       210.5504928 Edm =    0.002167294142 NCalls =    252
+Info in <Minuit2>: VariableMetricBuilder   13 - FCN =       210.5411834 Edm =    0.006429723316 NCalls =    266
+Info in <Minuit2>: VariableMetricBuilder   14 - FCN =       210.5241698 Edm =    0.007575941219 NCalls =    280
+Info in <Minuit2>: VariableMetricBuilder   15 - FCN =       210.5142802 Edm =    0.002187502562 NCalls =    295
+Info in <Minuit2>: VariableMetricBuilder   16 - FCN =       210.5123892 Edm =   0.0001139062737 NCalls =    309
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   17 - FCN =       210.5123892 Edm =   0.0002594521516 NCalls =    349
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 210.512389242160168
+Edm   = 0.00025945215160331353
+Nfcn  = 349
+a1	  = 1.79162	 +/-  0.532761	(limited)
+a2	  = 1.74377	 +/-  0.565959	(limited)
+mu	  = 125.519	 +/-  0.203547	(limited)
+p1	  = 4.22043	 +/-  5.27371	(limited)
+p2	  = 9.37232	 +/-  18.8272	(limited)
+width	  = 1.82999	 +/-  0.174799	(limited)
+Info in <Minuit2>: Minuit2Minimizer::Hesse Using max-calls 3000
+Info in <Minuit2>: Minuit2Minimizer::Hesse Hesse is valid - matrix is accurate
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: 210.512, estimated distance to minimum: 0.000260394
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                    a1    1.7916e+00 +/-  5.40e-01
+                    a2    1.7438e+00 +/-  5.74e-01
+                    mu    1.2552e+02 +/-  2.04e-01
+                    p1    4.2204e+00 +/-  5.34e+00
+                    p2    9.3723e+00 +/-  1.91e+01
+                 width    1.8300e+00 +/-  1.75e-01
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(hist) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+Info in <TCanvas::Print>: pdf file /home/mjlarroy/TFG_TUT/figures/pdf_graphs/Signal_fit_h_myy_pT_7.pdf has been created
+
+Applying ATLAS style settings...
+
+
+Processing MakeFit_Bins_ws.cc("h_myy_pT_8")...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset hist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::myy
+[#0] WARNING:InputArguments -- The parameter 'width' with range [0, 10] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::dcbPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(dcbPdf_over_dcbPdf_Int[myy]) fixing normalization set for coefficient determination to observables in data
+[#1] INFO:Fitting -- using CPU computation library compiled with -mavx2
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(dcbPdf): WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303)."
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_dcbPdf_over_dcbPdf_Int[myy]_hist) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: activating const optimization
+Minuit2Minimizer: Minimize with max-calls 3000 convergence for edm < 1 strategy 1
+Info in <Minuit2>: MnSeedGenerator Computing seed using NumericalGradient calculator
+Info in <Minuit2>: MnSeedGenerator Initial state: FCN =       248.6031636 Edm =       20.80692882 NCalls =     25
+Info in <Minuit2>: MnSeedGenerator Initial state  
+  Minimum value : 248.6031636
+  Edm           : 20.80692882
+  Internal parameters:	[     -1.370461484     -1.370461484    -0.2762266308     -1.370461484     -1.370461484    -0.9972832224]	
+  Internal gradient  :	[     -205.9897679     -89.90531895     -290.3452628     -207.2453419     -269.3243983      13.67167974]	
+  Internal covariance matrix:
+[[  0.00047334305              0              0              0              0              0]
+ [              0  0.00033660226              0              0              0              0]
+ [              0              0  6.3337659e-05              0              0              0]
+ [              0              0              0  0.00060961074              0              0]
+ [              0              0              0              0  0.00038004965              0]
+ [              0              0              0              0              0   0.0071288337]]]
+Info in <Minuit2>: VariableMetricBuilder Start iterating until Edm is < 0.001 with call limit = 3000
+Info in <Minuit2>: VariableMetricBuilder    0 - FCN =       248.6031636 Edm =       20.80692882 NCalls =     25
+Info in <Minuit2>: VariableMetricBuilder    1 - FCN =       231.6344441 Edm =       8.997864206 NCalls =     43
+Info in <Minuit2>: VariableMetricBuilder    2 - FCN =       219.2037814 Edm =       3.074153256 NCalls =     64
+Info in <Minuit2>: VariableMetricBuilder    3 - FCN =       211.4743702 Edm =      0.6819535714 NCalls =     87
+Info in <Minuit2>: VariableMetricBuilder    4 - FCN =       210.9281756 Edm =      0.1162492921 NCalls =    103
+Info in <Minuit2>: VariableMetricBuilder    5 - FCN =       210.7536359 Edm =    0.004062768086 NCalls =    118
+Info in <Minuit2>: VariableMetricBuilder    6 - FCN =       210.7425557 Edm =    0.001750366215 NCalls =    132
+Info in <Minuit2>: VariableMetricBuilder    7 - FCN =       210.7395534 Edm =   0.0008285453986 NCalls =    146
+Info in <Minuit2>: VariableMetricBuilder    8 - FCN =       210.7115636 Edm =    0.005054686535 NCalls =    166
+Info in <Minuit2>: VariableMetricBuilder    9 - FCN =       210.7016784 Edm =    0.009312145076 NCalls =    181
+Info in <Minuit2>: VariableMetricBuilder   10 - FCN =       210.6914435 Edm =    0.009896216929 NCalls =    196
+Info in <Minuit2>: VariableMetricBuilder   11 - FCN =       210.6500641 Edm =    0.005976237406 NCalls =    213
+Info in <Minuit2>: VariableMetricBuilder   12 - FCN =       210.6414867 Edm =   0.0004352921515 NCalls =    227
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   13 - FCN =       210.6414867 Edm =     0.01752695445 NCalls =    267
+Info in <Minuit2>: VariableMetricBuilder Tolerance not sufficient, continue minimization; Edm 0.017527 Required 0.001
+Info in <Minuit2>: VariableMetricBuilder   14 - FCN =       210.6221144 Edm =    0.001476926767 NCalls =    281
+Info in <Minuit2>: VariableMetricBuilder   15 - FCN =       210.6202492 Edm =   0.0002031956081 NCalls =    295
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   16 - FCN =       210.6202492 Edm =   0.0002847789814 NCalls =    335
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 210.620249238403289
+Edm   = 0.000284778981367039407
+Nfcn  = 335
+a1	  = 1.79506	 +/-  0.5286	(limited)
+a2	  = 1.76847	 +/-  0.566873	(limited)
+mu	  = 125.524	 +/-  0.201217	(limited)
+p1	  = 4.22747	 +/-  5.25915	(limited)
+p2	  = 7.46217	 +/-  12.8474	(limited)
+width	  = 1.81295	 +/-  0.172942	(limited)
+Info in <Minuit2>: Minuit2Minimizer::Hesse Using max-calls 3000
+Info in <Minuit2>: Minuit2Minimizer::Hesse Hesse is valid - matrix is accurate
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: 210.62, estimated distance to minimum: 0.000289936
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                    a1    1.7951e+00 +/-  5.35e-01
+                    a2    1.7685e+00 +/-  5.74e-01
+                    mu    1.2552e+02 +/-  2.01e-01
+                    p1    4.2275e+00 +/-  5.33e+00
+                    p2    7.4622e+00 +/-  1.30e+01
+                 width    1.8130e+00 +/-  1.73e-01
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(hist) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+Info in <TCanvas::Print>: pdf file /home/mjlarroy/TFG_TUT/figures/pdf_graphs/Signal_fit_h_myy_pT_8.pdf has been created
+
+Applying ATLAS style settings...
+
+
+Processing MakeFit_Bins_ws.cc("h_myy_pT_9")...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset hist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::myy
+[#0] WARNING:InputArguments -- The parameter 'width' with range [0, 10] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::dcbPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(dcbPdf_over_dcbPdf_Int[myy]) fixing normalization set for coefficient determination to observables in data
+[#1] INFO:Fitting -- using CPU computation library compiled with -mavx2
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(dcbPdf): WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303)."
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_dcbPdf_over_dcbPdf_Int[myy]_hist) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: activating const optimization
+Minuit2Minimizer: Minimize with max-calls 3000 convergence for edm < 1 strategy 1
+Info in <Minuit2>: MnSeedGenerator Computing seed using NumericalGradient calculator
+Info in <Minuit2>: MnSeedGenerator Initial state: FCN =       315.8400171 Edm =       27.43335251 NCalls =     25
+Info in <Minuit2>: MnSeedGenerator Initial state  
+  Minimum value : 315.8400171
+  Edm           : 27.43335251
+  Internal parameters:	[     -1.370461484     -1.370461484    -0.2762266308     -1.370461484     -1.370461484    -0.9972832224]	
+  Internal gradient  :	[     -270.7951079     -117.9414331     -371.4740312     -268.2325209     -346.0417141      18.81049273]	
+  Internal covariance matrix:
+[[  0.00037416855              0              0              0              0              0]
+ [              0  0.00026477101              0              0              0              0]
+ [              0              0  4.8761924e-05              0              0              0]
+ [              0              0              0  0.00047655071              0              0]
+ [              0              0              0              0   0.0002976205              0]
+ [              0              0              0              0              0   0.0055339271]]]
+Info in <Minuit2>: VariableMetricBuilder Start iterating until Edm is < 0.001 with call limit = 3000
+Info in <Minuit2>: VariableMetricBuilder    0 - FCN =       315.8400171 Edm =       27.43335251 NCalls =     25
+Info in <Minuit2>: VariableMetricBuilder    1 - FCN =       293.7114334 Edm =       11.37414089 NCalls =     43
+Info in <Minuit2>: VariableMetricBuilder    2 - FCN =       277.8161784 Edm =       3.987606418 NCalls =     64
+Info in <Minuit2>: VariableMetricBuilder    3 - FCN =       267.7662575 Edm =      0.6016815044 NCalls =     87
+Info in <Minuit2>: VariableMetricBuilder    4 - FCN =       267.2942896 Edm =      0.1154367561 NCalls =    103
+Info in <Minuit2>: VariableMetricBuilder    5 - FCN =       267.1161605 Edm =    0.006844788707 NCalls =    118
+Info in <Minuit2>: VariableMetricBuilder    6 - FCN =       267.0892333 Edm =    0.003918858862 NCalls =    132
+Info in <Minuit2>: VariableMetricBuilder    7 - FCN =       267.0804847 Edm =    0.003780282563 NCalls =    146
+Info in <Minuit2>: VariableMetricBuilder    8 - FCN =        267.070065 Edm =    0.002605364075 NCalls =    161
+Info in <Minuit2>: VariableMetricBuilder    9 - FCN =       267.0631552 Edm =    0.006345533936 NCalls =    175
+Info in <Minuit2>: VariableMetricBuilder   10 - FCN =       266.9801068 Edm =     0.02174436612 NCalls =    191
+Info in <Minuit2>: VariableMetricBuilder   11 - FCN =         266.95031 Edm =    0.006694364979 NCalls =    206
+Info in <Minuit2>: VariableMetricBuilder   12 - FCN =       266.9432842 Edm =   0.0003653836371 NCalls =    219
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   13 - FCN =       266.9432842 Edm =     0.01539597278 NCalls =    261
+Info in <Minuit2>: VariableMetricBuilder Tolerance not sufficient, continue minimization; Edm 0.015396 Required 0.001
+Info in <Minuit2>: VariableMetricBuilder   14 - FCN =       266.9262521 Edm =   0.0009831508923 NCalls =    277
+Info in <Minuit2>: VariableMetricBuilder   15 - FCN =       266.9250758 Edm =   0.0001275805264 NCalls =    291
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   16 - FCN =       266.9250758 Edm =   0.0001683290139 NCalls =    331
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 266.925075759921071
+Edm   = 0.000168329013919888104
+Nfcn  = 331
+a1	  = 1.82623	 +/-  0.478399	(limited)
+a2	  = 1.75675	 +/-  0.480275	(limited)
+mu	  = 125.522	 +/-  0.174934	(limited)
+p1	  = 4.12876	 +/-  4.57066	(limited)
+p2	  = 7.64545	 +/-  12.0135	(limited)
+width	  = 1.79158	 +/-  0.148833	(limited)
+Info in <Minuit2>: Minuit2Minimizer::Hesse Using max-calls 3000
+Info in <Minuit2>: Minuit2Minimizer::Hesse Hesse is valid - matrix is accurate
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: 266.925, estimated distance to minimum: 0.000169982
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                    a1    1.8262e+00 +/-  4.85e-01
+                    a2    1.7567e+00 +/-  4.86e-01
+                    mu    1.2552e+02 +/-  1.75e-01
+                    p1    4.1288e+00 +/-  4.63e+00
+                    p2    7.6454e+00 +/-  1.22e+01
+                 width    1.7916e+00 +/-  1.49e-01
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(hist) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+Info in <TCanvas::Print>: pdf file /home/mjlarroy/TFG_TUT/figures/pdf_graphs/Signal_fit_h_myy_pT_9.pdf has been created
+
+Applying ATLAS style settings...
+
+
+Processing MakeFit_Bins_ws.cc("h_myy_pT_10")...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset hist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::myy
+[#0] WARNING:InputArguments -- The parameter 'width' with range [0, 10] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::dcbPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(dcbPdf_over_dcbPdf_Int[myy]) fixing normalization set for coefficient determination to observables in data
+[#1] INFO:Fitting -- using CPU computation library compiled with -mavx2
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(dcbPdf): WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303)."
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_dcbPdf_over_dcbPdf_Int[myy]_hist) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: activating const optimization
+Minuit2Minimizer: Minimize with max-calls 3000 convergence for edm < 1 strategy 1
+Info in <Minuit2>: MnSeedGenerator Computing seed using NumericalGradient calculator
+Info in <Minuit2>: MnSeedGenerator Initial state: FCN =       179.2911571 Edm =       17.09911349 NCalls =     25
+Info in <Minuit2>: MnSeedGenerator Initial state  
+  Minimum value : 179.2911571
+  Edm           : 17.09911349
+  Internal parameters:	[     -1.370461484     -1.370461484    -0.2762266308     -1.370461484     -1.370461484    -0.9972832224]	
+  Internal gradient  :	[     -165.2434123      -73.6128714      -223.776728     -158.7717819     -202.8066014      12.61417831]	
+  Internal covariance matrix:
+[[  0.00066576555              0              0              0              0              0]
+ [              0  0.00046606032              0              0              0              0]
+ [              0              0  8.1750338e-05              0              0              0]
+ [              0              0              0  0.00082556714              0              0]
+ [              0              0              0              0   0.0005175133              0]
+ [              0              0              0              0              0   0.0094354346]]]
+Info in <Minuit2>: VariableMetricBuilder Start iterating until Edm is < 0.001 with call limit = 3000
+Info in <Minuit2>: VariableMetricBuilder    0 - FCN =       179.2911571 Edm =       17.09911349 NCalls =     25
+Info in <Minuit2>: VariableMetricBuilder    1 - FCN =       165.7763907 Edm =       6.479911544 NCalls =     43
+Info in <Minuit2>: VariableMetricBuilder    2 - FCN =       156.5703216 Edm =       2.388891693 NCalls =     64
+Info in <Minuit2>: VariableMetricBuilder    3 - FCN =       150.7599882 Edm =      0.2371316105 NCalls =     86
+Info in <Minuit2>: VariableMetricBuilder    4 - FCN =        150.576638 Edm =     0.07378358505 NCalls =    100
+Info in <Minuit2>: VariableMetricBuilder    5 - FCN =       150.4774157 Edm =    0.005150926061 NCalls =    114
+Info in <Minuit2>: VariableMetricBuilder    6 - FCN =       150.4592875 Edm =    0.001245131323 NCalls =    128
+Info in <Minuit2>: VariableMetricBuilder    7 - FCN =       150.4562644 Edm =    0.001260789704 NCalls =    142
+Info in <Minuit2>: VariableMetricBuilder    8 - FCN =       150.4492408 Edm =    0.003352008917 NCalls =    157
+Info in <Minuit2>: VariableMetricBuilder    9 - FCN =       150.4306539 Edm =    0.008433676279 NCalls =    172
+Info in <Minuit2>: VariableMetricBuilder   10 - FCN =       150.3993089 Edm =    0.003936979059 NCalls =    186
+Info in <Minuit2>: VariableMetricBuilder   11 - FCN =       150.3950436 Edm =   0.0003221898699 NCalls =    199
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   12 - FCN =       150.3950436 Edm =    0.003777559119 NCalls =    239
+Info in <Minuit2>: VariableMetricBuilder Tolerance not sufficient, continue minimization; Edm 0.00377756 Required 0.001
+Info in <Minuit2>: VariableMetricBuilder   13 - FCN =       150.3907773 Edm =   7.196003689e-05 NCalls =    253
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   14 - FCN =       150.3907773 Edm =   9.808805926e-05 NCalls =    293
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 150.390777344321833
+Edm   = 9.80880592596965694e-05
+Nfcn  = 293
+a1	  = 1.87547	 +/-  0.631007	(limited)
+a2	  = 1.81142	 +/-  0.629653	(limited)
+mu	  = 125.522	 +/-  0.2207	(limited)
+p1	  = 3.92722	 +/-  5.5748	(limited)
+p2	  = 6.21342	 +/-  10.8846	(limited)
+width	  = 1.7305	 +/-  0.184531	(limited)
+Info in <Minuit2>: Minuit2Minimizer::Hesse Using max-calls 3000
+Info in <Minuit2>: Minuit2Minimizer::Hesse Hesse is valid - matrix is accurate
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: 150.391, estimated distance to minimum: 9.83592e-05
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                    a1    1.8755e+00 +/-  6.39e-01
+                    a2    1.8114e+00 +/-  6.36e-01
+                    mu    1.2552e+02 +/-  2.21e-01
+                    p1    3.9272e+00 +/-  5.65e+00
+                    p2    6.2134e+00 +/-  1.10e+01
+                 width    1.7305e+00 +/-  1.84e-01
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(hist) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+Info in <TCanvas::Print>: pdf file /home/mjlarroy/TFG_TUT/figures/pdf_graphs/Signal_fit_h_myy_pT_10.pdf has been created
+
+Applying ATLAS style settings...
+
+
+Processing MakeFit_Bins_ws.cc("h_myy_pT_11")...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset hist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::myy
+[#0] WARNING:InputArguments -- The parameter 'width' with range [0, 10] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::dcbPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(dcbPdf_over_dcbPdf_Int[myy]) fixing normalization set for coefficient determination to observables in data
+[#1] INFO:Fitting -- using CPU computation library compiled with -mavx2
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(dcbPdf): WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303)."
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_dcbPdf_over_dcbPdf_Int[myy]_hist) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: activating const optimization
+Minuit2Minimizer: Minimize with max-calls 3000 convergence for edm < 1 strategy 1
+Info in <Minuit2>: MnSeedGenerator Computing seed using NumericalGradient calculator
+Info in <Minuit2>: MnSeedGenerator Initial state: FCN =       110.7412815 Edm =       11.69883623 NCalls =     25
+Info in <Minuit2>: MnSeedGenerator Initial state  
+  Minimum value : 110.7412815
+  Edm           : 11.69883623
+  Internal parameters:	[     -1.370461484     -1.370461484    -0.2762266308     -1.370461484     -1.370461484    -0.9972832224]	
+  Internal gradient  :	[     -109.5142451      -51.2562321     -149.5421544     -102.1764505     -130.4349233      9.281501106]	
+  Internal covariance matrix:
+[[   0.0010854874              0              0              0              0              0]
+ [              0  0.00075566272              0              0              0              0]
+ [              0              0  0.00012467225              0              0              0]
+ [              0              0              0   0.0013124862              0              0]
+ [              0              0              0              0  0.00082494008              0]
+ [              0              0              0              0              0    0.014696729]]]
+Info in <Minuit2>: VariableMetricBuilder Start iterating until Edm is < 0.001 with call limit = 3000
+Info in <Minuit2>: VariableMetricBuilder    0 - FCN =       110.7412815 Edm =       11.69883623 NCalls =     25
+Info in <Minuit2>: VariableMetricBuilder    1 - FCN =        101.649978 Edm =        4.02194113 NCalls =     43
+Info in <Minuit2>: VariableMetricBuilder    2 - FCN =       95.87425104 Edm =       1.558361696 NCalls =     64
+Info in <Minuit2>: VariableMetricBuilder    3 - FCN =       92.20371978 Edm =       0.141785708 NCalls =     87
+Info in <Minuit2>: VariableMetricBuilder    4 - FCN =       92.10716929 Edm =     0.03461934598 NCalls =    101
+Info in <Minuit2>: VariableMetricBuilder    5 - FCN =       92.04925589 Edm =    0.004200724883 NCalls =    116
+Info in <Minuit2>: VariableMetricBuilder    6 - FCN =       92.03682657 Edm =   0.0006384829319 NCalls =    130
+Info in <Minuit2>: VariableMetricBuilder    7 - FCN =       92.03416426 Edm =    0.001084994811 NCalls =    144
+Info in <Minuit2>: VariableMetricBuilder    8 - FCN =       92.03073479 Edm =    0.002192753299 NCalls =    159
+Info in <Minuit2>: VariableMetricBuilder    9 - FCN =       92.01052186 Edm =    0.006474350941 NCalls =    174
+Info in <Minuit2>: VariableMetricBuilder   10 - FCN =       91.99547009 Edm =   0.0005730614576 NCalls =    189
+Info in <Minuit2>: VariableMetricBuilder   11 - FCN =       91.99466466 Edm =   4.839383914e-05 NCalls =    203
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   12 - FCN =       91.99466466 Edm =    0.001929916021 NCalls =    243
+Info in <Minuit2>: VariableMetricBuilder Tolerance not sufficient, continue minimization; Edm 0.00192992 Required 0.001
+Info in <Minuit2>: VariableMetricBuilder   13 - FCN =       91.99251771 Edm =   3.930712684e-05 NCalls =    257
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   14 - FCN =       91.99251771 Edm =   4.782073982e-05 NCalls =    297
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 91.992517711341975
+Edm   = 4.78207398242582924e-05
+Nfcn  = 297
+a1	  = 1.91421	 +/-  0.811666	(limited)
+a2	  = 1.86332	 +/-  0.829808	(limited)
+mu	  = 125.519	 +/-  0.267255	(limited)
+p1	  = 4.00664	 +/-  7.34046	(limited)
+p2	  = 6.15657	 +/-  13.9387	(limited)
+width	  = 1.67318	 +/-  0.220233	(limited)
+Info in <Minuit2>: Minuit2Minimizer::Hesse Using max-calls 3000
+Info in <Minuit2>: Minuit2Minimizer::Hesse Hesse is valid - matrix is accurate
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: 91.9925, estimated distance to minimum: 4.84081e-05
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                    a1    1.9142e+00 +/-  8.23e-01
+                    a2    1.8633e+00 +/-  8.39e-01
+                    mu    1.2552e+02 +/-  2.67e-01
+                    p1    4.0066e+00 +/-  7.44e+00
+                    p2    6.1566e+00 +/-  1.41e+01
+                 width    1.6732e+00 +/-  2.20e-01
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(hist) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+Info in <TCanvas::Print>: pdf file /home/mjlarroy/TFG_TUT/figures/pdf_graphs/Signal_fit_h_myy_pT_11.pdf has been created
+
+Applying ATLAS style settings...
+
+
+Processing MakeFit_Bins_ws.cc("h_myy_pT_12")...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset hist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::myy
+[#0] WARNING:InputArguments -- The parameter 'width' with range [0, 10] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::dcbPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(dcbPdf_over_dcbPdf_Int[myy]) fixing normalization set for coefficient determination to observables in data
+[#1] INFO:Fitting -- using CPU computation library compiled with -mavx2
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(dcbPdf): WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303)."
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_dcbPdf_over_dcbPdf_Int[myy]_hist) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: activating const optimization
+Minuit2Minimizer: Minimize with max-calls 3000 convergence for edm < 1 strategy 1
+Info in <Minuit2>: MnSeedGenerator Computing seed using NumericalGradient calculator
+Info in <Minuit2>: MnSeedGenerator Initial state: FCN =       130.1319214 Edm =       16.10998322 NCalls =     25
+Info in <Minuit2>: MnSeedGenerator Initial state  
+  Minimum value : 130.1319214
+  Edm           : 16.10998322
+  Internal parameters:	[     -1.370461484     -1.370461484    -0.2762266308     -1.370461484     -1.370461484    -0.9972832224]	
+  Internal gradient  :	[     -142.0934708     -75.93279289     -194.6767521     -127.0477711     -164.3579833      14.53462624]	
+  Internal covariance matrix:
+[[  0.00092969295              0              0              0              0              0]
+ [              0  0.00064851131              0              0              0              0]
+ [              0              0  9.4460137e-05              0              0              0]
+ [              0              0              0   0.0010830127              0              0]
+ [              0              0              0              0   0.0006815923              0]
+ [              0              0              0              0              0    0.011628146]]]
+Info in <Minuit2>: VariableMetricBuilder Start iterating until Edm is < 0.001 with call limit = 3000
+Info in <Minuit2>: VariableMetricBuilder    0 - FCN =       130.1319214 Edm =       16.10998322 NCalls =     25
+Info in <Minuit2>: VariableMetricBuilder    1 - FCN =       117.9184265 Edm =       4.533320645 NCalls =     43
+Info in <Minuit2>: VariableMetricBuilder    2 - FCN =       111.1781873 Edm =       1.815301263 NCalls =     65
+Info in <Minuit2>: VariableMetricBuilder    3 - FCN =       107.4586105 Edm =      0.6209638674 NCalls =     88
+Info in <Minuit2>: VariableMetricBuilder    4 - FCN =       106.9972586 Edm =     0.09849350216 NCalls =    106
+Info in <Minuit2>: VariableMetricBuilder    5 - FCN =       106.8164253 Edm =    0.008994918324 NCalls =    125
+Info in <Minuit2>: VariableMetricBuilder    6 - FCN =       106.8008216 Edm =   0.0004766628679 NCalls =    139
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder    7 - FCN =       106.8008216 Edm =     0.02536897754 NCalls =    179
+Info in <Minuit2>: VariableMetricBuilder Tolerance not sufficient, continue minimization; Edm 0.025369 Required 0.001
+Info in <Minuit2>: VariableMetricBuilder    8 - FCN =       106.7709917 Edm =    0.001113194125 NCalls =    194
+Info in <Minuit2>: VariableMetricBuilder    9 - FCN =       106.7696747 Edm =   8.058863082e-05 NCalls =    208
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   10 - FCN =       106.7696747 Edm =   0.0001107022963 NCalls =    248
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 106.769674657406966
+Edm   = 0.000110702296318071342
+Nfcn  = 248
+a1	  = 2.00228	 +/-  0.753202	(limited)
+a2	  = 1.97757	 +/-  0.780535	(limited)
+mu	  = 125.497	 +/-  0.226071	(limited)
+p1	  = 3.49214	 +/-  5.59943	(limited)
+p2	  = 4.96582	 +/-  9.43885	(limited)
+width	  = 1.57298	 +/-  0.181996	(limited)
+Info in <Minuit2>: Minuit2Minimizer::Hesse Using max-calls 3000
+Info in <Minuit2>: Minuit2Minimizer::Hesse Hesse is valid - matrix is accurate
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: 106.77, estimated distance to minimum: 0.00011371
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                    a1    2.0023e+00 +/-  7.63e-01
+                    a2    1.9776e+00 +/-  7.90e-01
+                    mu    1.2550e+02 +/-  2.26e-01
+                    p1    3.4921e+00 +/-  5.67e+00
+                    p2    4.9658e+00 +/-  9.55e+00
+                 width    1.5730e+00 +/-  1.82e-01
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(hist) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+Info in <TCanvas::Print>: pdf file /home/mjlarroy/TFG_TUT/figures/pdf_graphs/Signal_fit_h_myy_pT_12.pdf has been created
+
+Applying ATLAS style settings...
+
+
+Processing MakeFit_Bins_ws.cc("h_myy_pT_13")...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset hist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::myy
+[#0] WARNING:InputArguments -- The parameter 'width' with range [0, 10] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::dcbPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(dcbPdf_over_dcbPdf_Int[myy]) fixing normalization set for coefficient determination to observables in data
+[#1] INFO:Fitting -- using CPU computation library compiled with -mavx2
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(dcbPdf): WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303)."
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_dcbPdf_over_dcbPdf_Int[myy]_hist) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: activating const optimization
+Minuit2Minimizer: Minimize with max-calls 3000 convergence for edm < 1 strategy 1
+Info in <Minuit2>: MnSeedGenerator Computing seed using NumericalGradient calculator
+Info in <Minuit2>: MnSeedGenerator Initial state: FCN =       81.10683034 Edm =        12.7702793 NCalls =     25
+Info in <Minuit2>: MnSeedGenerator Initial state  
+  Minimum value : 81.10683034
+  Edm           : 12.7702793
+  Internal parameters:	[     -1.370461484     -1.370461484    -0.2762266308     -1.370461484     -1.370461484    -0.9972832224]	
+  Internal gradient  :	[     -102.3520261     -62.84800043     -146.2487377     -85.92437666     -113.2818518      12.82530876]	
+  Internal covariance matrix:
+[[   0.0015069511              0              0              0              0              0]
+ [              0   0.0010553093              0              0              0              0]
+ [              0              0   0.0001280229              0              0              0]
+ [              0              0              0   0.0016565294              0              0]
+ [              0              0              0              0   0.0010447763              0]
+ [              0              0              0              0              0    0.016720176]]]
+Info in <Minuit2>: VariableMetricBuilder Start iterating until Edm is < 0.001 with call limit = 3000
+Info in <Minuit2>: VariableMetricBuilder    0 - FCN =       81.10683034 Edm =        12.7702793 NCalls =     25
+Info in <Minuit2>: VariableMetricBuilder    1 - FCN =       71.62822547 Edm =       2.725048833 NCalls =     43
+Info in <Minuit2>: VariableMetricBuilder    2 - FCN =       67.49215497 Edm =       1.236880175 NCalls =     65
+Info in <Minuit2>: VariableMetricBuilder    3 - FCN =       65.42445505 Edm =      0.3982991812 NCalls =     88
+Info in <Minuit2>: VariableMetricBuilder    4 - FCN =       65.01311345 Edm =     0.02834774989 NCalls =    105
+Info in <Minuit2>: VariableMetricBuilder    5 - FCN =       64.96022198 Edm =     0.01035456521 NCalls =    123
+Info in <Minuit2>: VariableMetricBuilder    6 - FCN =       64.91302262 Edm =    0.004896959529 NCalls =    142
+Info in <Minuit2>: VariableMetricBuilder    7 - FCN =       64.90828109 Edm =    0.004830982893 NCalls =    159
+Info in <Minuit2>: VariableMetricBuilder    8 - FCN =        64.9051334 Edm =   0.0004517652858 NCalls =    173
+Info in <Minuit2>: VariableMetricBuilder    9 - FCN =       64.90422792 Edm =   0.0002320376094 NCalls =    187
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   10 - FCN =       64.90422792 Edm =    0.004251702645 NCalls =    227
+Info in <Minuit2>: VariableMetricBuilder Tolerance not sufficient, continue minimization; Edm 0.0042517 Required 0.001
+Info in <Minuit2>: VariableMetricBuilder   11 - FCN =       64.89954109 Edm =   4.350669183e-05 NCalls =    241
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 64.8995410886746242
+Edm   = 4.35066918296637338e-05
+Nfcn  = 241
+a1	  = 2.11247	 +/-  0.968244	(limited)
+a2	  = 2.15985	 +/-  1.04938	(limited)
+mu	  = 125.472	 +/-  0.250339	(limited)
+p1	  = 3.04303	 +/-  5.47847	(limited)
+p2	  = 3.90748	 +/-  7.90573	(limited)
+width	  = 1.42273	 +/-  0.195585	(limited)
+Info in <Minuit2>: Minuit2Minimizer::Hesse Using max-calls 3000
+Info in <Minuit2>: Minuit2Minimizer::Hesse Hesse is valid - matrix is accurate
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: 64.8995, estimated distance to minimum: 5.57683e-05
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                    a1    2.1125e+00 +/-  9.60e-01
+                    a2    2.1598e+00 +/-  1.05e+00
+                    mu    1.2547e+02 +/-  2.50e-01
+                    p1    3.0430e+00 +/-  5.88e+00
+                    p2    3.9075e+00 +/-  8.68e+00
+                 width    1.4227e+00 +/-  1.95e-01
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(hist) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+Info in <TCanvas::Print>: pdf file /home/mjlarroy/TFG_TUT/figures/pdf_graphs/Signal_fit_h_myy_pT_13.pdf has been created
+
+Applying ATLAS style settings...
+
+
+Processing MakeFit_Bins_ws.cc("h_myy_pT_14")...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset hist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::myy
+[#0] WARNING:InputArguments -- The parameter 'width' with range [0, 10] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::dcbPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(dcbPdf_over_dcbPdf_Int[myy]) fixing normalization set for coefficient determination to observables in data
+[#1] INFO:Fitting -- using CPU computation library compiled with -mavx2
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(dcbPdf): WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303)."
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_dcbPdf_over_dcbPdf_Int[myy]_hist) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: activating const optimization
+Minuit2Minimizer: Minimize with max-calls 3000 convergence for edm < 1 strategy 1
+Info in <Minuit2>: MnSeedGenerator Computing seed using NumericalGradient calculator
+Info in <Minuit2>: MnSeedGenerator Initial state: FCN =       18.93093236 Edm =       3.994062061 NCalls =     25
+Info in <Minuit2>: MnSeedGenerator Initial state  
+  Minimum value : 18.93093236
+  Edm           : 3.994062061
+  Internal parameters:	[     -1.370461484     -1.370461484    -0.2762266308     -1.370461484     -1.370461484    -0.9972832224]	
+  Internal gradient  :	[     -27.89481897     -20.54489362     -42.12950372     -22.05439089     -29.96462491      4.330371998]	
+  Internal covariance matrix:
+[[   0.0064844455              0              0              0              0              0]
+ [              0   0.0046568848              0              0              0              0]
+ [              0              0  0.00044283316              0              0              0]
+ [              0              0              0   0.0066757135              0              0]
+ [              0              0              0              0   0.0041976112              0]
+ [              0              0              0              0              0     0.06201746]]]
+Info in <Minuit2>: VariableMetricBuilder Start iterating until Edm is < 0.001 with call limit = 3000
+Info in <Minuit2>: VariableMetricBuilder    0 - FCN =       18.93093236 Edm =       3.994062061 NCalls =     25
+Info in <Minuit2>: VariableMetricBuilder    1 - FCN =       16.00313659 Edm =      0.6159231984 NCalls =     45
+Info in <Minuit2>: VariableMetricBuilder    2 - FCN =       15.08475101 Edm =      0.3175951338 NCalls =     63
+Info in <Minuit2>: VariableMetricBuilder    3 - FCN =       14.69601377 Edm =      0.1667551937 NCalls =     84
+Info in <Minuit2>: VariableMetricBuilder    4 - FCN =       14.55722255 Edm =     0.01156325459 NCalls =    101
+Info in <Minuit2>: VariableMetricBuilder    5 - FCN =       14.53761596 Edm =    0.001114276518 NCalls =    116
+Info in <Minuit2>: VariableMetricBuilder    6 - FCN =        14.5355118 Edm =   0.0005688293982 NCalls =    130
+Info in <Minuit2>: VariableMetricBuilder    7 - FCN =       14.52006721 Edm =    0.006219511962 NCalls =    150
+Info in <Minuit2>: VariableMetricBuilder    8 - FCN =       14.50853328 Edm =    0.001246192348 NCalls =    165
+Info in <Minuit2>: VariableMetricBuilder    9 - FCN =       14.50717466 Edm =   5.537279378e-05 NCalls =    179
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder   10 - FCN =       14.50717466 Edm =   0.0007669793521 NCalls =    219
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 14.5071746586131205
+Edm   = 0.000766979352051801113
+Nfcn  = 219
+a1	  = 1.80583	 +/-  1.59864	(limited)
+a2	  = 1.9679	 +/-  1.7841	(limited)
+mu	  = 125.425	 +/-  0.425113	(limited)
+p1	  = 4.5111	 +/-  15.6141	(limited)
+p2	  = 4.20311	 +/-  14.7568	(limited)
+width	  = 1.16593	 +/-  0.345786	(limited)
+Info in <Minuit2>: Minuit2Minimizer::Hesse Using max-calls 3000
+Info in <Minuit2>: Minuit2Minimizer::Hesse Hesse is valid - matrix is accurate
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: 14.5072, estimated distance to minimum: 0.000783142
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                    a1    1.8058e+00 +/-  1.61e+00
+                    a2    1.9679e+00 +/-  1.80e+00
+                    mu    1.2542e+02 +/-  4.25e-01
+                    p1    4.5111e+00 +/-  1.58e+01
+                    p2    4.2031e+00 +/-  1.50e+01
+                 width    1.1659e+00 +/-  3.46e-01
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(hist) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+Info in <TCanvas::Print>: pdf file /home/mjlarroy/TFG_TUT/figures/pdf_graphs/Signal_fit_h_myy_pT_14.pdf has been created
+
+Applying ATLAS style settings...
+
+
+Processing MakeFit_Bins_ws.cc("h_myy_pT_15")...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset hist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::myy
+[#0] WARNING:InputArguments -- The parameter 'width' with range [0, 10] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'a2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p1' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'p2' with range [0, 100] of the RooCrystalBall 'dcbPdf' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::dcbPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(dcbPdf_over_dcbPdf_Int[myy]) fixing normalization set for coefficient determination to observables in data
+[#1] INFO:Fitting -- using CPU computation library compiled with -mavx2
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(dcbPdf): WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303)."
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_dcbPdf_over_dcbPdf_Int[myy]_hist) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: activating const optimization
+Minuit2Minimizer: Minimize with max-calls 3000 convergence for edm < 1 strategy 1
+Info in <Minuit2>: MnSeedGenerator Computing seed using NumericalGradient calculator
+Info in <Minuit2>: MnSeedGenerator Initial state: FCN =      0.7841772384 Edm =      0.2196969117 NCalls =     25
+Info in <Minuit2>: MnSeedGenerator Initial state  
+  Minimum value : 0.7841772384
+  Edm           : 0.2196969117
+  Internal parameters:	[     -1.370461484     -1.370461484    -0.2762266308     -1.370461484     -1.370461484    -0.9972832224]	
+  Internal gradient  :	[     -1.360625496     -1.082640531     -2.166235571     -1.000602365     -1.377727197     0.2437009438]	
+  Internal covariance matrix:
+[[     0.15878147              0              0              0              0              0]
+ [              0     0.11481912              0              0              0              0]
+ [              0              0   0.0086994115              0              0              0]
+ [              0              0              0     0.15116611              0              0]
+ [              0              0              0              0    0.095314604              0]
+ [              0              0              0              0              0      1.2992705]]]
+Info in <Minuit2>: VariableMetricBuilder Start iterating until Edm is < 0.001 with call limit = 3000
+Info in <Minuit2>: VariableMetricBuilder    0 - FCN =      0.7841772384 Edm =      0.2196969117 NCalls =     25
+Info in <Minuit2>: VariableMetricBuilder    1 - FCN =      0.6224410954 Edm =     0.02638655082 NCalls =     45
+Info in <Minuit2>: VariableMetricBuilder    2 - FCN =      0.5890533818 Edm =     0.01680221432 NCalls =     63
+Info in <Minuit2>: VariableMetricBuilder    3 - FCN =      0.5692827785 Edm =     0.00515918997 NCalls =     84
+Info in <Minuit2>: VariableMetricBuilder    4 - FCN =      0.5666161816 Edm =   0.0005118813459 NCalls =     98
+Info in <Minuit2>: VariableMetricBuilder    5 - FCN =      0.5658834296 Edm =   8.186021528e-05 NCalls =    112
+Info in <Minuit2>: VariableMetricBuilder After Hessian
+Info in <Minuit2>: VariableMetricBuilder    6 - FCN =      0.5658834296 Edm =   0.0004999267217 NCalls =    152
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 0.565883429634656765
+Edm   = 0.00049992672169759235
+Nfcn  = 152
+a1	  = 2.23803	 +/-  7.95542	(limited)
+a2	  = 2.2924	 +/-  9.39676	(limited)
+mu	  = 125.401	 +/-  1.70497	(limited)
+p1	  = 1.93341	 +/-  73.5924	(limited)
+p2	  = 2.56522	 +/-  88.7128	(limited)
+width	  = 0.999536	 +/-  1.26784	(limited)
+Info in <Minuit2>: Minuit2Minimizer::Hesse Using max-calls 3000
+Info in <Minuit2>: Minuit2Minimizer::Hesse Hesse is valid - matrix is accurate
+[#1] INFO:Minimization -- RooAbsMinimizerFcn::setOptimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: 0.565883, estimated distance to minimum: 0.00050838
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                    a1    2.2380e+00 +/-  8.04e+00
+                    a2    2.2924e+00 +/-  9.63e+00
+                    mu    1.2540e+02 +/-  1.71e+00
+                    p1    1.9334e+00 +/-  7.42e+01
+                    p2    2.5652e+00 +/-  8.94e+01
+                 width    9.9954e-01 +/-  1.27e+00
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(hist) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+Info in <TCanvas::Print>: pdf file /home/mjlarroy/TFG_TUT/figures/pdf_graphs/Signal_fit_h_myy_pT_15.pdf has been created
