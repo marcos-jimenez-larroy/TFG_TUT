@@ -43,9 +43,9 @@ AnalyzeBkg::AnalyzeBkg(TTree *tree) : fChain(0)
 // if parameter tree is not specified (or zero), connect the file                                                                              
 // used to generate this class and read the Tree.                                                                                              
    if (tree == 0) {
-      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("/userdata/acueto/HGamMxAODs/mc23a/mc23a.Sherpa2_myy_90_175_AF3.MxAODDetailed.e8537_a910_r14932_p6453_h031.root/ntup_Sherpa_diphoton-0.root");
+      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("file_path");
       if (!f || !f->IsOpen()) {
-         f = new TFile("/userdata/acueto/HGamMxAODs/mc23a/mc23a.Sherpa2_myy_90_175_AF3.MxAODDetailed.e8537_a910_r14932_p6453_h031.root/ntup_Sherpa_diphoton-3.root");
+         f = new TFile("file_path");
       }
       f->GetObject("BkgTree",tree);
 
