@@ -10,6 +10,6 @@ The 'graphs' folder contains the graphs that were considered definitive for the 
 
 The 'CrossSection_figures' folder contains images for the Cross Section analysis specifically. 
 
-The 'Event Selection files' folder contains the ROOT scripts to filter the events to obtain the interesting ones.
+The 'Event Selection files' folder contains the ROOT scripts to filter the events to obtain the interesting ones. Also the .h files (the origin path has been covered)
 
 Some of the code as well as the used ntuples are not displayed as they are property of the ATLAS Collaboration.
