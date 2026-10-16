@@ -41,9 +41,9 @@ Analyze_data::Analyze_data(TTree *tree) : fChain(0)
 // if parameter tree is not specified (or zero), connect the file                                                                              
 // used to generate this class and read the Tree.                                                                                              
    if (tree == 0) {
-      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("/userdata/acueto/HGam_datas/data22/data22_13p6TeV.periodAllYear.physics_Main.MxAODDetailed.p6456.h031.001.root");
+      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("file_path");
       if (!f || !f->IsOpen()) {
-         f = new TFile("/userdata/acueto/HGam_datas/data22/data22_13p6TeV.periodAllYear.physics_Main.MxAODDetailed.p6456.h031.001.root");
+         f = new TFile("file_path");
       }
       f->GetObject("CollectionTree",tree);
 
